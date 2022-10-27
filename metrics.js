@@ -27,7 +27,7 @@ function countLines(fileUrl) {
   const parseLines = report.toString().replace(/-/g, "").split(" ").slice(-1)
   return parseInt(parseLines)
 }
-
+//vsdvdjvn
 function pullCoverageContent(reportDocument) {
   return reportDocument
     .querySelectorAll('.clearfix')[0]
