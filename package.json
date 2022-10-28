@@ -27,13 +27,11 @@
     "karma-mocha-reporter": "^2.2.5",
     "karma-sinon": "^1.0.5",
     "mocha": "^10.1.0",
+    "node-fetch": "^3.2.10",
     "node-html-parser": "^6.1.1",
     "nyc": "^15.1.0",
     "proxyquireify": "^3.2.1",
     "sinon": "^14.0.1",
     "vinyl-source-stream": "^2.0.0"
-  },
-  "dependencies": {
-    "node-fetch": "^3.2.10"
   }
 }

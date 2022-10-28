@@ -22,17 +22,8 @@ jobs:
         with:
           node-version: 18
 
-      - name: 🤖 Install node-html-parser
-        run: npm install --save-dev node-html-parser
-
-      - name: 🤖 Install node-fetch
-        run: npm install --save-dev node-fetch
-
-      - name: 🤖 Install Istanbul
-        run: npm install --save-dev nyc
-
-      - name: 🤖 Install Sinon
-        run: npm install sinon
+      - name: 🤖 npm install
+        run: npm install
 
       - name: 🧪 Test lines
         run: npm test

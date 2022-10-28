@@ -2,6 +2,7 @@
  * Created by Eric on 12/9/2015.
  */
 
+const sinon = require("sinon");
 var proxy = require('proxyquireify')(require);
 
 describe('Global Exports', function () {
