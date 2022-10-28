@@ -22,8 +22,14 @@ jobs:
         with:
           node-version: 18
 
+      - name: 🤖 Install node-html-parser
+        run: npm install --save-dev node-html-parser
+
+      - name: 🤖 Install node-fetch
+        run: npm install --save-dev node-fetch
+
       - name: 🤖 Setup Istanbul
-        uses: npm install --save-dev nyc
+        run: npm install --save-dev nyc
 
       - name: 🧪 Test lines
         run: npm test
@@ -31,11 +37,6 @@ jobs:
       - name: 🧪 Test coverage
         run: npm coverage
 
-      - name: 💩 Install node-html-parser
-        run: npm install --save-dev node-html-parser
-
-      - name: 💩 Install node-fetch
-        run: npm install --save-dev node-fetch
 
       - name: 🎉 Send metrics to server
         run: node metric.js
