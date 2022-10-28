@@ -28,8 +28,11 @@ jobs:
       - name: 🤖 Install node-fetch
         run: npm install --save-dev node-fetch
 
-      - name: 🤖 Setup Istanbul
+      - name: 🤖 Install Istanbul
         run: npm install --save-dev nyc
+
+      - name: 🤖 Install Sinon
+        run: npm install sinon
 
       - name: 🧪 Test lines
         run: npm test
